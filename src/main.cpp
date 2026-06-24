@@ -6,9 +6,8 @@ int firstLEDPin = 13;
 int secondLEDPin = 12;
 int thirdLEDPin = 11;
 
-int firstLED = 50;
-int secondLED = 200;
-int thirdLED = 1000;
+int ledLenght = 150;
+int waitLenght = 20;
 
 int LongWait = 2000;
 
@@ -22,109 +21,302 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  //FIRST LED (RED)
+  //FRONT
   digitalWrite(firstLEDPin, HIGH);
-  delay(firstLED);
+  delay(ledLenght);
   digitalWrite(firstLEDPin, LOW);
-  delay(firstLED);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(thirdLEDPin, LOW);
+
+  //BACK
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(thirdLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
   digitalWrite(firstLEDPin, HIGH);
-  delay(firstLED);
+  delay(ledLenght);
   digitalWrite(firstLEDPin, LOW);
-  delay(firstLED);digitalWrite(firstLEDPin, HIGH);
-  delay(firstLED);
-  digitalWrite(firstLEDPin, LOW);
-  delay(firstLED);digitalWrite(firstLEDPin, HIGH);
-  delay(firstLED);
-  digitalWrite(firstLEDPin, LOW);
-  delay(firstLED);digitalWrite(firstLEDPin, HIGH);
-  delay(firstLED);
-  digitalWrite(firstLEDPin, LOW);
-  delay(firstLED);
 
-  //SECOND LED (GREEN)
+  //1
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+  delay(waitLenght);
   digitalWrite(secondLEDPin, HIGH);
-  delay(secondLED);
+  delay(ledLenght);
   digitalWrite(secondLEDPin, LOW);
-  delay(secondLED);
-  digitalWrite(secondLEDPin, HIGH);
-  delay(secondLED);
-  digitalWrite(secondLEDPin, LOW);
-  delay(secondLED);digitalWrite(secondLEDPin, HIGH);
-  delay(secondLED);
-  digitalWrite(secondLEDPin, LOW);
-  delay(secondLED);digitalWrite(secondLEDPin, HIGH);
-  delay(secondLED);
-  digitalWrite(secondLEDPin, LOW);
-  delay(secondLED);digitalWrite(secondLEDPin, HIGH);
-  delay(secondLED);
-  digitalWrite(secondLEDPin, LOW);
-  delay(secondLED);digitalWrite(secondLEDPin, HIGH);
-  delay(secondLED);
-  digitalWrite(secondLEDPin, LOW);
-  delay(secondLED);digitalWrite(secondLEDPin, HIGH);
-  delay(secondLED);
-  digitalWrite(secondLEDPin, LOW);
-  delay(secondLED);digitalWrite(secondLEDPin, HIGH);
-  delay(secondLED);
-  digitalWrite(secondLEDPin, LOW);
-  delay(secondLED);digitalWrite(secondLEDPin, HIGH);
-  delay(secondLED);
-  digitalWrite(secondLEDPin, LOW);
-  delay(secondLED);digitalWrite(secondLEDPin, HIGH);
-  delay(secondLED);
-  digitalWrite(secondLEDPin, LOW);
-  delay(secondLED);
+  delay(waitLenght);
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(thirdLEDPin, LOW);
 
-  //THIRD LED (BLUE)
   digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
   digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+
+  //FRONT
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+
+  //2
+
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);digitalWrite(thirdLEDPin, HIGH);
-  delay(thirdLED);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
   digitalWrite(thirdLEDPin, LOW);
-  delay(thirdLED);
+
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(thirdLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(thirdLEDPin, LOW);
+
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(thirdLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+
+  //BACK
+
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(thirdLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(thirdLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+
+  digitalWrite(thirdLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(thirdLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(secondLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(secondLEDPin, LOW);
+  delay(waitLenght);
+  digitalWrite(firstLEDPin, HIGH);
+  delay(ledLenght);
+  digitalWrite(firstLEDPin, LOW);
+
+
   
-  delay(LongWait);
 }
 
 // put function definitions here:
