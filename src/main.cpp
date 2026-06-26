@@ -1,42 +1,20 @@
 #include <Arduino.h>
 
-// put function declarations here:
-//int myFunction(int, int);
-int firstLEDPin = 13;
-int secondLEDPin = 12;
-int thirdLEDPin = 11;
-
-int waitLenght = 500;
-
-int LongWait = 2000;
+const int pinBliz = 8;
+const int pinLED = 13; 
 
 void setup() {
-  // put your setup code here, to run once:
-  pinMode(firstLEDPin, OUTPUT);
-  pinMode(secondLEDPin, OUTPUT);
-  pinMode(thirdLEDPin, OUTPUT);
-  //First project with external LED and breadboard.
+  pinMode(pinBliz, OUTPUT);
+  pinMode(pinLED, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  //FRONT
-  digitalWrite(firstLEDPin, HIGH);
-  delay(waitLenght);
-  digitalWrite(secondLEDPin, HIGH);
-  delay(waitLenght);
-  digitalWrite(thirdLEDPin, HIGH);
-  delay(waitLenght);
-  digitalWrite(firstLEDPin, LOW);
-  digitalWrite(secondLEDPin, LOW);
-  digitalWrite(thirdLEDPin, LOW);
-  delay(LongWait);
-  
-  
-}
+  tone(pinBliz, 1400);
+  digitalWrite(pinLED, HIGH); 
+  delay(400); 
 
-// put function definitions here:
-/*int myFunction(int x, int y) {
-  
+  tone(pinBliz, 1000); 
+  digitalWrite(pinLED, LOW); 
+  delay(400); 
+
 }
-*/
